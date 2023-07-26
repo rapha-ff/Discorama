@@ -9,4 +9,4 @@ with
     )
 
 select *
-from source_city
+from source_cities

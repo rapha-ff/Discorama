@@ -13,4 +13,4 @@ with
     )
 
 select *
-from source_address
+from source_addressies

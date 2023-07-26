@@ -8,7 +8,7 @@ with
             , cast(language_id as int) as lingua_id
             , cast(rental_duration as int) as duracao_aluguel
             , cast(rental_rate as numeric) as taxa_aluguel
-            , cast(length as int) as duracao
+            , cast(length as int) as duracao_filme
             , cast(replacement_cost as numeric) as custo_reposicao
             , cast(rating as string) as nota 
             --last_update
