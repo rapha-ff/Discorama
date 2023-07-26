@@ -1,0 +1,103 @@
+version: 2
+
+sources:
+  - name: erp
+    schema: erp_discorama  
+    description: Fonte de dados do ERP da Discorama.
+    tables:
+      - name: actor
+        description: Tabela com o nome dos atores.
+        columns: 
+          - name: actor_id
+            tests:
+              - unique
+              - not_null
+      - name: addressies 
+        description: Tabela com endereços.
+        columns:
+          - name: address_id
+            tests:
+              - unique
+              - not_null
+      - name: category
+        description: Tabela com o nome dos gêneros.
+        columns:
+          - name: category_id
+            tests:
+              - unique
+              - not_null
+      - name: cities
+        description: Tabela com cidades.
+        columns:
+          - name: city_id
+            tests:
+              - unique
+              - not_null    
+      - name: countries
+        description: Tabela com continentes.
+        columns:
+          - name: country_id
+            tests:
+              - unique
+              - not_null    
+      - name: customer
+        description: Tabela com os clientes.
+        columns:
+          - name: customer_id
+            tests:
+              - unique
+              - not_null    
+      - name: film
+        description: Tabela com o nome dos filmes.
+        columns:
+          - name: film_id
+            tests:
+              - unique
+              - not_null    
+      - name: film_actor
+        description: Tabela com os atores no filme.
+        columns:
+          - name: film_id
+            tests:
+              - not_null    
+      - name: film_category
+        description: Tabela com os gêneros no filme.
+        columns:
+          - name: film_id
+            tests:
+              - not_null    
+      - name: inventory
+        description: Tabela com o inventório dos filmes.
+        columns:
+          - name: inventory_id
+            tests:
+              - unique
+              - not_null    
+      - name: payment
+        description: Tabela como o pagamento por locação.
+        columns:
+          - name: payment_id
+            tests:
+              - unique
+              - not_null    
+      - name: rental
+        description: Tabela com as locações.
+        columns:
+          - name: rental_id
+            tests:
+              - unique
+              - not_null    
+      - name: staff
+        description: Tabela com os funcionários das lojas.
+        columns:
+          - name: staff_id
+            tests:
+              - unique
+              - not_null    
+      - name: store
+        description: Tabela com as lojas
+        columns:
+          - name: store_id
+            tests:
+              - unique
+              - not_null    
