@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: dim_filmes
+    description: Dimensão de filmes da Discorama.
+    columns:
+      - name: filme_id
+        description: Identificador único do filme.
+        tests:
+          - unique
+          - not_null
+      - name: titulo
+        description: Título do filme.
+
+      - name: ano_lancamento
+        description: Ano de lançamento do filme.
+
+      - name: lingua_id
+        description: Idioma do filme.
+
+      - name: duracao_aluguel
+        description: Duração do aluguel do filme.
+
+      - name: taxa_aluguel
+        description: Taxa de alguel do filme.
+
+      - name: duracao_filme
+        description: Duração do filme.
+
+      - name: custo_reposicao
+        description: Custo de reposição do filme.
+
+      - name: nota
+        description: Nota do filme.
+
+      - name: caracteristicas_especiais
+        description: Características especiais do filme.

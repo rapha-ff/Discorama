@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: categorias
+    description: Categorias dos filmes.
+    columns:
+      - name: categoria_id
+        description: Identificador único do cliente.
+        tests:
+          - not_null
+          - unique
+      - name: nome_categoria
+        description: Nome da categoria.

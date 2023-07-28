@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    description: Dimensão de clientes da Discorama.
+    columns:
+      - name: cliente_id
+        description: Identificador único do cliente.
+        tests:
+          - not_null
+          - unique
+          
+      - name: loja_id
+        description: Identificador da loja.
+
+      - name: nome_completo_cliente
+        description: Nome completo do cliente.
+
+      - name: data_de_criacao
+        description: Data de criação do cadastro do cliente.
+
+      - name: is_ativo
+        description: Se o cliente continua ativo.
+
+      - name: endereco
+        description: Endereço da residencia do cliente.
+
+      - name: distrito
+        description: Distrito da residencia do cliente.
+
+      - name: cidade
+        description: Cidade da residencia do cliente.
+
+      - name: pais
+        description: País da residencia do cliente.

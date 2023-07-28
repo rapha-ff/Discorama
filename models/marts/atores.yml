@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: atores
+    description: Atores dos filmes.
+    columns:
+      - name: ator_id
+        description: Identificador único do ator.
+        tests:
+          - not_null
+          - unique
+      - name: nome_categoria
+        description: Nome da categoria.
+
+      - name: nome_ator
+        description: Primeiro nome do ator.
+        
+      - name: sobrenome_ator
+        description: Sobrenome do ator.
+        
+      - name: nome_completo_ator
+        description: Nome completo do ator.
+

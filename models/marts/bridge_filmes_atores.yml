@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: bridge_filmes_atores
+    description: Tabela ponte para impedir o relacionamento muitos para muitos entre filmes e atores.
+    columns:
+      - name: filme_id
+        description: Identificador do filme.
+
+      - name: ator_id
+        description: Identificador do ator.
