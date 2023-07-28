@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: dim_lojas
+    description: Dimensão de lojas da Discorama.
+    columns:
+      - name: loja_id
+        description: Identificador único da loja.
+        tests:
+          - not_null
+          - unique
+      - name: endereco
+        description: Endereço da loja.
+
+      - name: distrito
+        description: Distrito da loja.
+
+      - name: cidade
+        description: Cidade da loja.
+
+      - name: pais
+        description: País da loja.
+
+      - name: nome_completo_funcionario
+        description: Nome completo do funcionário da loja.

@@ -1,7 +1,7 @@
 with 
     source_customer as (
         select
-            customer_id as cliente_id
+            cast(customer_id as int) as cliente_id
             , cast(store_id as int) as loja_id 
             , cast(first_name as string) as nome_cliente
             , cast(last_name as string) as sobrenome_cliente

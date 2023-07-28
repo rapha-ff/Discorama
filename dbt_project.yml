@@ -32,6 +32,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 
+models:
+  dbt_discorama:
+    
+    staging:
+      +materialized: view
+      +schema: stg
+      erp_discorama:
+        +schema: stg_erp_discorama
+
+    marts:
+      +materialized: table
+      +schema: marts
 
 seeds:
   dbt_discorama:

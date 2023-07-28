@@ -10,7 +10,7 @@ with
             , cast(rental_rate as numeric) as taxa_aluguel
             , cast(length as int) as duracao_filme
             , cast(replacement_cost as numeric) as custo_reposicao
-            , cast(rating as string) as nota 
+            , cast(rating as string) as nota
             --last_update
             , special_features as caracteristicas_especiais
             --fulltext 

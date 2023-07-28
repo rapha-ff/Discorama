@@ -8,7 +8,7 @@ with
             , cast(city_id as int) as cidade_id
             --postal_code
             --phone
-            --last_update
+            --last_update foi em 16/02/2006
         from {{ source('erp', 'addressies') }}
     )
 
