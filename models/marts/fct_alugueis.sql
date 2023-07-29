@@ -42,6 +42,7 @@ with
         select
             *
             , date_diff(data_pagamento, data_devolucao, day) as pagamento_devolucao
+            , date_diff(data_devolucao, data_aluguel, day) as duracao_aluguel
         from join_alugueis
     )
 
