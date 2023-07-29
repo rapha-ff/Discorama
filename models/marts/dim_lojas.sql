@@ -19,11 +19,6 @@ with
         from {{ ref('stg_erp__countries') }}
     )
 
-    , funcionario as (
-        select *
-        from {{ ref('stg_erp__staff') }}
-    )
-
     , join_loja as (
         select
             loja.loja_id
@@ -31,9 +26,7 @@ with
             , endereco.distrito
             , cidade.cidade
             , pais.pais
-            , funcionario.nome_completo_funcionario
         from loja
-        left join funcionario using(funcionario_id)
         left join endereco using(endereco_id)
         left join cidade using(cidade_id)
         left join pais using(pais_id)

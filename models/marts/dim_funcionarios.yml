@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_funcionarios
+    description: Dimensão de funcionários da Discorama.
+    columns:
+      - name: funcionario_id
+        description: Identificador único ddo funcionário.
+        tests:
+          - not_null
+          - unique
+      - name: nome_completo_funcionario
+        description: Nome completo do funcionário.
