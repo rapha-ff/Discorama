@@ -30,6 +30,7 @@ with
             , endereco.distrito
             , cidade.cidade
             , pais.pais
+            , clientes.ultima_atualizacao
         from clientes
         left join endereco using(endereco_id)
         left join cidade using(cidade_id)

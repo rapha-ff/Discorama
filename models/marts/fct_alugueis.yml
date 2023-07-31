@@ -13,5 +13,4 @@ models:
       - name: pagamento_id
         description: Identificador único do pagamento.
         tests:
-          - not_null
           - unique

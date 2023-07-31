@@ -6,7 +6,7 @@ with
             , cast(staff_id as int) as funcionario_id
             , cast(rental_id as int) as aluguel_id
             , cast(amount as numeric) as valor
-            , cast(payment_date as datetime) as data_pagamento
+            , cast(date(payment_date) as date) as data_pagamento
         from {{ source('erp', 'payment') }}
     )
 

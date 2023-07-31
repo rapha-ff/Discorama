@@ -10,7 +10,7 @@ with
             , cast(address_id as int) as endereco_id
             -- activebool possui todos os valores como true, incondizente com a coluna active, dessa maneira utilizarei a coluna active
             , cast(create_date as datetime) as data_de_criacao
-            , cast(last_update as datetime) as ultima_atualizacao
+            , cast(date(last_update) as date) as ultima_atualizacao
             , case when active = 0 then False else True end as is_ativo
         from {{ source('erp', 'customer') }}
     )
