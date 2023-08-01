@@ -79,7 +79,7 @@ sources:
           - name: payment_id
             tests:
               - unique
-              - not_null    
+              - not_null
       - name: rental
         description: Tabela com as locações.
         columns:

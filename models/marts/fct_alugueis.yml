@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_alugueis
+    description: Tabela que registra os alugueis dos dvds.
+    columns:
+      - name: aluguel_id
+        description: Identificador único do aluguel.
+        tests:
+          - not_null
+          - unique
+
+      - name: pagamento_id
+        description: Identificador único do pagamento.
+        tests:
+          - unique

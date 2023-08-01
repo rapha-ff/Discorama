@@ -1,1 +1,1 @@
-{{ dbt_date.get_date_dimension("2005-01-01", "2006-12-31") }}
+{{ dbt_date.get_date_dimension("2005-01-01", "2007-12-31") }}
